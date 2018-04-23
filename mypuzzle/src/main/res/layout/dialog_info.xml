@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="游戏说明"
+        android:textColor="#ffffffff"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#ffffffff"
+        android:text="普通玩家可以从主界面或手机相册选择图片进行拼图，点击黑色小方块上下左右的任意格子，就可以交换两个方块，点击排行榜可以查看前8名玩家的游戏记录和自己的最佳纪录。疯狂玩家则由系统随机一张图片进行拼图，和普通玩家相比，没有自动拼图和偷看一眼的功能。"/>
+    <Button
+        android:id="@+id/btSure"
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</LinearLayout>

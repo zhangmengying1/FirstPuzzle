@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backGroundTotal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundfinal"
+
+   >
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_gravity="right"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/setting"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <Button
+        android:id="@+id/pattern"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:background="@drawable/gurulogin"
+
+        />
+
+    <Button
+        android:id="@+id/rule"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:background="@drawable/noticeshow"
+
+        />
+    <Switch
+        android:id="@+id/music1"
+        android:text="   音乐"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:background="#696969"
+        android:switchMinWidth="80dp"
+
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+
+
+
+        />
+    <Switch
+        android:id="@+id/musicEffect"
+        android:text="   音效"
+        android:textSize="25sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#696969"
+        android:switchMinWidth="80dp"
+
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+
+
+        />
+
+    <Button
+        android:id="@+id/back"
+        android:text="确认"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+
+        android:background="#696969"
+        android:visibility="invisible"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp">
+        <Button
+            android:id="@+id/login"
+            android:background="@drawable/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            />
+        <Button
+            android:id="@+id/register"
+            android:background="@drawable/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

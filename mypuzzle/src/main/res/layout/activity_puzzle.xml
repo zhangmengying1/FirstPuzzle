@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundpuzzle">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/back"
+            android:background="@drawable/returnbutton"
+            android:layout_width="55dp"
+            android:layout_height="46dp"
+
+            />
+        <ImageView
+            android:layout_marginLeft="195dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/jibuqi"/>
+
+        <TextView
+            android:id="@+id/steps"
+            android:text=" 0"
+            android:textSize="25sp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/selectGrade"
+            android:prompt="@string/app_name"
+
+            android:entries="@array/game_grades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"/>
+        <ImageView
+            android:layout_marginLeft="175dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/jishiqi"/>
+
+        <Chronometer
+            android:id="@+id/timer"
+            android:textSize="25sp"
+            android:format="%5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3"
+            android:background="#000000"
+            >
+        </TableLayout>
+        <ImageView
+            android:id="@+id/smallview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="4dp"
+
+            android:visibility="invisible"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+        <Button
+            android:id="@+id/start"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:layout_height="62.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/startgame"
+            />
+        <Button
+            android:id="@+id/originalMap"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:layout_height="47.2dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:alpha="0.5"
+            android:background="@drawable/getaeye"
+            />
+        <Button
+            android:id="@+id/help"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:layout_height="55.6dp"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:alpha="0.5"
+            android:background="@drawable/helpgame"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/test"
+        android:text="000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>

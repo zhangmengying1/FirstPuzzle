@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.example.mypuzzle">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+    </uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="PUZZLE"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".PuzzleActivity"></activity>
+        <activity android:name=".FirstView">
+        </activity>
+        <activity android:name=".StartAnim">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RankingListActivity"></activity>
+    </application>
+
+
+</manifest>
